@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "lora", sans-serif;
+    background-color: #FFF8E7;
+
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #5E432E;
+}
+
+header {
+    display: inline;
+}
+.atas {
+    color: white;
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    background-color:#556B2F ;
+}
+
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+
+    }
+
+    main aside {
+        align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+  }
+
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer {
+    background-color: #556B2F;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #e3b605;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+
+nav a {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #3D2F2F;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.profil header {
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    max-height: 300PX;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profil img {
+    width: 200px;
+}
+
+.card, .profil {
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+}
+
+.infor {
+    text-align: center;
+}
