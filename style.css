@@ -24,6 +24,9 @@ header {
   text-align: center;
   background-color: #556b2f;
 }
+.p {
+  font-size: 15px;
+}
 
 #content {
   flex: 5;
